@@ -158,13 +158,55 @@
     .hero-content h2 {
       font-size: 2.2rem;
     }
+    }
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.nav-list li {
+  margin: 0;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.nav-link:hover,
+.nav-link:focus {
+  background-color: var(--green-light);
+  color: var(--green-dark);
+  outline: none;
+}
+.nav-link[aria-current="page"] {
+  background-color: var(--beige-light);
+  color: var(--green-dark);
+  cursor: default;
+}
   }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>Green Garden Design</h1>
+  <h1>Green Garden Design</h1> 
+  <nav aria-label="Primary navigation">
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link" aria-current="[current]">Home</a></li>
+      <li><a href="privacy.html" class="nav-link">Privacy Policy</a></li>
+      <li><a href="terms.html" class="nav-link">Terms & Conditions</a></li>
+      <li><a href="cookies.html" class="nav-link">Cookie Policy</a></li>
+      <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+    </ul>
+  </nav>
 </header>
 
 <div class="hero" role="img" aria-label="Beautiful green garden with flowers and lush plants">
