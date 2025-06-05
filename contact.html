@@ -6,280 +6,280 @@
 <title>Contact Us - Green Garden Design</title>
 <style>
   :root {
-    --green-light: #a3d9a5;
-    --green-dark: #2e7d32;
-    --beige-light: #f5f5dc;
-    --brown-dark: #5d4037;
+    --green-dark: #2a5d34;
+    --green-medium: #4ca364;
+    --green-light: #7ed6a8;
+    --cream: #f8f9f4;
+    --dark-grey: #3a3a3a;
+    --light-grey: #eaeaea;
+    --shadow-color: rgba(0, 0, 0, 0.1);
     --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-  * {
+
+  *, *::before, *::after {
     box-sizing: border-box;
   }
+
   body {
     margin: 0;
     font-family: var(--font-primary);
-    background-color: var(--beige-light);
-    color: #333;
+    background-color: var(--cream);
+    color: var(--dark-grey);
     line-height: 1.7;
-    padding-bottom: 60px;
+    font-size: 16px;
   }
+
+  a {
+    color: var(--green-dark);
+    text-decoration: none;
+  }
+
+  a:hover, a:focus {
+    text-decoration: underline;
+  }
+
   header {
     background: var(--green-dark);
     color: white;
     padding: 1.5rem 2rem;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    text-align: center;
   }
+
+  header .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
   header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
     margin: 0;
-    font-size: 2.2rem;
-    letter-spacing: 1.8px;
-    text-transform: uppercase;
+    color: white;
   }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  nav ul li {
+    font-weight: 600;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white;
+  }
+
+  nav ul li a:hover, nav ul li a:focus {
+    background-color: var(--green-light);
+    color: var(--green-dark);
+    border-radius: 4px;
+  }
+
   main {
     max-width: 900px;
     margin: 2rem auto 4rem;
     padding: 0 1rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
-  h2 {
+
+  h1, h2, h3 {
     color: var(--green-dark);
     margin-top: 1.5rem;
     margin-bottom: 1rem;
   }
-  h3 {
-    color: var(--green-dark);
-    margin-top: 1.4rem;
-    margin-bottom: 0.9rem;
+
+  p, ul {
+    margin-bottom: 1rem;
   }
-  p {
-    margin-bottom: 1.2rem;
-    text-align: justify;
-  }
+
   ul {
-    margin-left: 1.8rem;
+    padding-left: 1.2rem;
+  }
+
+  address {
+    font-style: normal;
     margin-bottom: 1.5rem;
+    line-height: 1.5;
   }
-  ul li {
-    margin-bottom: 0.7rem;
-  }
-  a {
-    color: var(--green-dark);
-    text-decoration: underline;
-  }
+
   form {
-    margin-top: 1.5rem;
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 2rem;
   }
-  label {
+
+  form label {
     display: block;
-    margin-bottom: 0.4rem;
-    font-weight: bold;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
     color: var(--green-dark);
   }
-  input[type="text"],
-  input[type="email"],
-  textarea {
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
     width: 100%;
-    padding: 0.7rem;
+    padding: 0.6rem 0.75rem;
     margin-bottom: 1.2rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--light-grey);
     border-radius: 6px;
     font-size: 1rem;
     resize: vertical;
   }
-  textarea {
+
+  form textarea {
     min-height: 120px;
   }
-  button[type="submit"] {
+
+  form button {
     background-color: var(--green-dark);
     color: white;
+    padding: 0.7rem 1.5rem;
     border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.1rem;
-    font-weight: 600;
     border-radius: 6px;
+    font-weight: 700;
     cursor: pointer;
+    font-size: 1.1rem;
     transition: background-color 0.3s ease;
   }
-  button[type="submit"]:hover,
-  button[type="submit"]:focus {
-    background-color: #25662c;
-    outline: none;
+
+  form button:hover, form button:focus {
+    background-color: var(--green-medium);
   }
+
   footer {
-    background-color: var(--brown-dark);
+    background-color: var(--green-dark);
     color: white;
-    text-align: center;
-    padding: 1.5rem 2rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
+    padding: 1.25rem 1rem;
+    font-size: 0.9rem;
   }
-  footer p {
-    margin: 0.3rem 0;
+
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
   }
-  @media (max-width: 640px) {
-    main {
-      margin: 1rem 0 3rem;
-      padding: 1rem;
-      border-radius: 0;
-      box-shadow: none;
+
+  @media(min-width: 600px) {
+    footer .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
-    footer {
-      position: static;
-      padding-bottom: 2rem;
-    }
-    }
-.nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-.nav-list li {
-  margin: 0;
-}
-.nav-link {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-.nav-link:hover,
-.nav-link:focus {
-  background-color: var(--green-light);
-  color: var(--green-dark);
-  outline: none;
-}
-.nav-link[aria-current="page"] {
-  background-color: var(--beige-light);
-  color: var(--green-dark);
-  cursor: default;
-}
   }
 </style>
 </head>
 <body>
-
 <header>
-  <h1>Green Garden Design</h1>
- <nav aria-label="Primary navigation">
-    <ul class="nav-list">
-      <li><a href="index.html" class="nav-link" aria-current="[current]">Home</a></li>
-      <li><a href="privacy.html" class="nav-link">Privacy Policy</a></li>
-      <li><a href="terms.html" class="nav-link">Terms & Conditions</a></li>
-      <li><a href="cookies.html" class="nav-link">Cookie Policy</a></li>
-      <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+    <h1>Green Garden Design</h1>
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="index.html#services-pricing">Services & Pricing</a></li>
+        <li><a href="index.html#customer-satisfaction">Customer Satisfaction</a></li>
+        <li><a href="index.html#disclaimer">Disclaimer</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <h2>Contact Us</h2>
-  <p>We appreciate your interest in Green Garden Design and welcome your inquiries about our garden design services, consultations, or any other questions you may have. Our dedicated team is here to assist you in creating the outdoor space you’ve always dreamed of.</p>
+<main role="main" aria-labelledby="page-title">
+  <h1 id="page-title">Contact Us</h1>
 
-  <h3>How to Reach Us</h3>
-  <p>You can contact us through several convenient methods. Whether you prefer to call us, send an email, or use our online contact form, we will respond promptly to all communications.</p>
-  <ul>
-    <li><strong>Phone:</strong> Call us at (555) 123-4567 during business hours, Monday through Friday, from 9 AM to 6 PM.</li>
-    <li><strong>Email:</strong> Send your detailed queries or requests to <a href="mailto:info@greengardendesign.com">info@greengardendesign.com</a>. We aim to respond within 24-48 hours.</li>
-    <li><strong>Physical Address:</strong> Visit our office at 123 Greenway Lane, Garden City, GC 45678. Please call ahead to schedule an appointment.</li>
-  </ul>
+  <p>We at Green Garden Design value your inquiries, ideas, and feedback. Whether you are interested in our garden design services, seeking information, or need assistance, this page is designed to provide you with comprehensive contact options and useful information.</p>
 
-  <h3>Schedule a Free Consultation</h3>
-  <p>We offer complimentary initial consultations to discuss your garden design needs and goals. During this consultation, our experts will:</p>
-  <ul>
-    <li>Assess your outdoor space and current landscaping features.</li>
-    <li>Understand your preferences, lifestyle, and budget.</li>
-    <li>Answer your questions about design possibilities and timelines.</li>
-    <li>Provide a clear overview of our services and pricing.</li>
-  </ul>
-  <p>To schedule a consultation, please call us or fill out the contact form below, and we will get back to you to arrange a convenient time.</p>
+  <h2>How to Reach Us</h2>
+  <p>Our dedicated team is available to assist you with everything related to garden design, landscaping ideas, pricing questions, or booking a consultation. You can contact us via phone, email, or by visiting our office at the address below.</p>
 
-  <h3>Preparing for Your Consultation</h3>
-  <p>To make the most of your time with our garden design specialists, consider gathering the following information before your appointment:</p>
-  <ul>
-    <li>Photos or videos of your current outdoor area.</li>
-    <li>A list of features or plants you like or dislike.</li>
-    <li>Ideas or inspiration (magazines, Pinterest boards, etc.).</li>
-    <li>Your preferred style and colors.</li>
-    <li>Any budget or scheduling constraints.</li>
-  </ul>
-  <p>Bringing this information helps us create a personalized design that aligns with your vision and needs from the start.</p>
+  <address>
+    <strong>Green Garden Design</strong><br />
+    123 Greenway Lane<br />
+    Springfield, USA<br />
+    Phone: +1 (555) 123-4567<br />
+    Email: <a href="mailto:info@greengardendesign.com">info@greengardendesign.com</a>
+  </address>
 
-  <h3>Frequently Asked Questions</h3>
-  <h4>How long does the garden design process take?</h4>
-  <p>The timeline depends on the project scope but typically ranges from a few weeks to a couple of months. After consultation, we provide a detailed schedule outlining each phase.</p>
+  <h2>Customer Support Hours</h2>
+  <p>Our customer support is available Monday through Friday from 9:00 AM to 6:00 PM Eastern Time. We strive to respond to emails and phone calls within one business day.</p>
 
-  <h4>Do you provide maintenance services?</h4>
-  <p>Yes, we offer garden maintenance plans to help keep your space healthy and beautiful year-round. Maintenance is available as an optional service included in your design package or as a standalone offering.</p>
+  <h2>Frequently Asked Questions</h2>
+  <h3>What services do you offer?</h3>
+  <p>We offer custom garden design, seasonal planting, landscaping and hardscaping, garden lighting, low maintenance garden solutions, and sustainable eco-friendly garden designs tailored to your preferences.</p>
 
-  <h4>Can I customize my garden design throughout the process?</h4>
-  <p>Absolutely! We encourage collaboration at every stage to ensure the design reflects your preferences and lifestyle.</p>
+  <h3>How do I schedule a consultation?</h3>
+  <p>You can schedule a consultation by calling our office at +1 (555) 123-4567 or by filling out the contact form below. We will get back to you promptly to arrange a suitable time.</p>
 
-  <h4>What areas do you serve?</h4>
-  <p>Our services primarily cover Garden City and surrounding regions. Contact us to confirm if your location is within our service area.</p>
+  <h3>What areas do you serve?</h3>
+  <p>We primarily serve Springfield and surrounding communities. If you are unsure whether we cover your location, please contact us to confirm.</p>
 
-  <h4>Are estimates or quotes free?</h4>
-  <p>Initial consultations and estimates are free of charge. Detailed pricing is provided after site assessment and project scoping.</p>
+  <h3>Do you offer maintenance services?</h3>
+  <p>We specialize in garden design and installation. While we do not directly offer maintenance, we can recommend trusted local professionals to help you keep your garden thriving.</p>
 
-  <h3>Contact Form</h3>
-  <form action="mailto:info@greengardendesign.com" method="POST" enctype="text/plain" novalidate>
-    <label for="name">Full Name *</label>
-    <input type="text" id="name" name="name" required placeholder="Your full name" />
+  <h2>Contact Form</h2>
+  <p>Please fill out the form below with your details and inquiry. We look forward to hearing from you!</p>
 
-    <label for="email">Email Address *</label>
-    <input type="email" id="email" name="email" required placeholder="you@example.com" />
+  <form action="mailto:info@greengardendesign.com" method="POST" enctype="text/plain" aria-label="Contact form">
+    <label for="name">Full Name<span aria-hidden="true" style="color:red;"> *</span></label>
+    <input type="text" id="name" name="Name" required placeholder="Your full name" />
+
+    <label for="email">Email Address<span aria-hidden="true" style="color:red;"> *</span></label>
+    <input type="email" id="email" name="Email" required placeholder="your.email@example.com" />
 
     <label for="phone">Phone Number</label>
-    <input type="text" id="phone" name="phone" placeholder="Optional" />
+    <input type="text" id="phone" name="Phone" placeholder="Optional" />
 
-    <label for="subject">Subject *</label>
-    <input type="text" id="subject" name="subject" required placeholder="Reason for contacting" />
+    <label for="subject">Subject<span aria-hidden="true" style="color:red;"> *</span></label>
+    <input type="text" id="subject" name="Subject" required placeholder="Brief subject" />
 
-    <label for="message">Message *</label>
-    <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+    <label for="message">Message<span aria-hidden="true" style="color:red;"> *</span></label>
+    <textarea id="message" name="Message" required placeholder="Write your message here..."></textarea>
 
     <button type="submit">Send Message</button>
   </form>
 
-  <h3>What to Expect After You Contact Us</h3>
-  <p>Once you submit your inquiry, our team will review your message and respond within 1-2 business days. We aim to provide clear, helpful answers and, where applicable, schedule next steps such as consultations or site visits.</p>
+  <h2>What to Expect After Contacting Us</h2>
+  <p>Once you contact us, one of our specialists will review your inquiry and respond typically within one business day. We will discuss your garden vision, schedule a consultation, and provide a detailed proposal tailored to your needs.</p>
 
-  <p>If your request is urgent, we recommend calling us directly to ensure timely attention.</p>
-
-  <h3>Privacy and Confidentiality</h3>
-  <p>We treat all your contact information with strict confidentiality in accordance with our <a href="privacy.html">Privacy Policy</a>. Your details are used solely for communication related to your inquiry and are never shared with unauthorized third parties.</p>
-
-  <h3>Other Ways to Connect</h3>
-  <p>Stay connected with us on social media for inspiration, news, and tips for greener living:</p>
+  <h2>Tips for a Successful Consultation</h2>
+  <p>To make the most out of your consultation with Green Garden Design, consider the following advice:</p>
   <ul>
-    <li><a href="#" aria-label="Green Garden Design Facebook">Facebook</a></li>
-    <li><a href="#" aria-label="Green Garden Design Instagram">Instagram</a></li>
-    <li><a href="#" aria-label="Green Garden Design Twitter">Twitter</a></li>
+    <li>Prepare images or inspirations of gardens or features you like.</li>
+    <li>Think about your garden preferences, including maintenance levels and style.</li>
+    <li>Consider budget range to guide realistic design proposals.</li>
+    <li>Make note of any special requirements like accessibility or pet-friendly designs.</li>
   </ul>
 
-  <p>We look forward to helping you bring your garden dreams to life! Thank you for choosing Green Garden Design.</p>
+  <h2>Feedback and Complaints</h2>
+  <p>We welcome your feedback to improve our services. If you have any complaints or concerns, please contact us directly so we can address them promptly and effectively.</p>
 </main>
 
 <footer>
-  <p><strong>Green Garden Design</strong></p>
-  <p>123 Greenway Lane, Garden City, GC 45678</p>
-  <p>Phone: (555) 123-4567</p>
-  <p>&copy; 2024 Green Garden Design. All rights reserved.</p>
+  <div class="container" role="contentinfo">
+    <div>Address: 123 Greenway Lane, Springfield, USA</div>
+    <div>Phone: +1 (555) 123-4567</div>
+  </div>
 </footer>
-
 </body>
 </html>
