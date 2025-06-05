@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Green Garden Design Services</title>
+<style>
+  :root {
+    --green-light: #a3d9a5;
+    --green-dark: #2e7d32;
+    --beige-light: #f5f5dc;
+    --brown-dark: #5d4037;
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: var(--font-primary);
+    background-color: var(--beige-light);
+    color: #333;
+    line-height: 1.6;
+  }
+  header {
+    background: var(--green-dark);
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    height: 400px;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    position: relative;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(46, 125, 50, 0.6);
+    z-index: 0;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    text-align: center;
+  }
+  .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  main {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+  section {
+    margin-bottom: 3rem;
+  }
+  h3 {
+    color: var(--green-dark);
+    border-bottom: 3px solid var(--green-light);
+    padding-bottom: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  .services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 3rem;
+  }
+  .service-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-item img {
+    max-width: 100%;
+    max-height: 180px;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    margin-bottom: 1rem;
+  }
+  .service-item h4 {
+    margin: 0 0 0.5rem 0;
+    color: var(--green-dark);
+    text-align: center;
+  }
+  .service-description {
+    flex-grow: 1;
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 0.75rem;
+    text-align: center;
+  }
+  .service-price {
+    font-weight: bold;
+    color: var(--green-dark);
+    font-size: 1rem;
+    text-align: center;
+  }
+  .customer-satisfaction, .disclaimer {
+    background-color: var(--green-light);
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    color: var(--green-dark);
+  }
+  footer {
+    background-color: var(--brown-dark);
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+  }
+  footer p {
+    margin: 0.4rem 0;
+  }
+  @media (max-width: 700px) {
+    .services-list {
+      grid-template-columns: 1fr;
+    }
+    .hero {
+      height: 300px;
+    }
+    .hero-content h2 {
+      font-size: 2.2rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Green Garden Design</h1>
+</header>
+
+<div class="hero" role="img" aria-label="Beautiful green garden with flowers and lush plants">
+  <div class="hero-content">
+    <h2>Transform Your Outdoor Space into a Green Oasis</h2>
+    <p>Expert garden design services tailored for sustainable beauty and harmony with nature.</p>
+  </div>
+</div>
+
+<main>
+  <section aria-labelledby="about-heading">
+    <h3 id="about-heading">About Our Green Garden Design Services</h3>
+    <p>Welcome to Green Garden Design, where we blend creativity, sustainability, and horticultural expertise to bring your outdoor dreams to life. Our passion is to design personalized green spaces that not only enhance the aesthetics of your property but also promote ecological balance and environmental stewardship.</p>
+    <p>With years of experience in garden architecture and design, our team understands how to harmonize natural elements such as plants, water features, terrain contours, and architectural details to create peaceful and inviting environments. Whether you desire a lush flower garden, a vegetable oasis, or a low-maintenance green retreat, we tailor each project to meet your lifestyle, climate, and budget.</p>
+    <p>Our design philosophy focuses on:</p>
+    <ul>
+      <li><strong>Sustainable landscaping:</strong> Using native and drought-resistant plants to conserve water and support local ecosystems.</li>
+      <li><strong>Functional beauty:</strong> Designing spaces that are easy to maintain while providing year-round interest and comfort.</li>
+      <li><strong>Innovative solutions:</strong> Incorporating modern techniques like rain gardens, green roofs, and smart irrigation systems.</li>
+      <li><strong>Customer collaboration:</strong> Engaging clients in every step to ensure the final design reflects your unique vision.</li>
+    </ul>
+    <p>From residential backyards to commercial landscapes, Green Garden Design is committed to transforming outdoor spaces into thriving green sanctuaries that you can enjoy for years to come.</p>
+  </section>
+
+  <section aria-labelledby="services-pricing-heading">
+    <h3 id="services-pricing-heading">Our Garden Design Services & Pricing</h3>
+    <div class="services-list">
+
+      <article class="service-item" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80" alt="Garden planning on a table with sketches and plants" />
+        <h4>Custom Garden Planning</h4>
+        <p class="service-description">We conduct a thorough site analysis and consult with you to develop a custom garden plan that fits your goals, soil conditions, sun exposure, and personal taste.</p>
+        <p class="service-price">Price Range: $500 - $1500</p>
+      </article>
+
+      <article class="service-item" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=600&q=80" alt="Fresh plants and flowers ready for planting" />
+        <h4>Plant Selection & Installation</h4>
+        <p class="service-description">Choose from a wide variety of plants, trees, shrubs, and flowers handpicked for your specific environment, ensuring growth and sustainability.</p>
+        <p class="service-price">Price Range: $1000 - $4000</p>
+      </article>
+
+      <article class="service-item" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=600&q=80" alt="Water pond feature in garden with stones" />
+        <h4>Water Feature Design & Build</h4>
+        <p class="service-description">Add calming pond, fountain, or stream features that complement your garden and enhance biodiversity.</p>
+        <p class="service-price">Price Range: $1500 - $5000</p>
+      </article>
+
+      <article class="service-item" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80" alt="Stone pathway in garden with greenery" />
+        <h4>Hardscape & Pathways</h4>
+        <p class="service-description">Integrate stone patios, walkways, retaining walls, and seating areas using eco-friendly materials that blend naturally with your garden.</p>
+        <p class="service-price">Price Range: $1200 - $4500</p>
+      </article>
+
+      <article class="service-item" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1441716841578-9b941525f4cc?auto=format&fit=crop&w=600&q=80" alt="Gardener trimming plants in garden" />
+        <h4>Garden Maintenance Plans</h4>
+        <p class="service-description">Keep your garden thriving year-round with our professional maintenance packages, including pruning, fertilizing, mulching, and irrigation management.</p>
+        <p class="service-price">Price Range: $150 - $400 / month</p>
+      </article>
+
+      <article class="service-item" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" alt="Solar garden lights illuminating garden pathway" />
+        <h4>Eco-Friendly Garden Lighting</h4>
+        <p class="service-description">Illuminate your garden with solar and energy-efficient lighting options designed to create magical nighttime ambiance without harming the environment.</p>
+        <p class="service-price">Price Range: $300 - $1200</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section aria-labelledby="customer-satisfaction-heading" class="customer-satisfaction">
+    <h3 id="customer-satisfaction-heading">Customer Satisfaction Guarantee</h3>
+    <p>At Green Garden Design, your satisfaction is our highest priority. We strive to exceed your expectations through:</p>
+    <ul>
+      <li>Personalized, attentive customer service.</li>
+      <li>Timely project completion with clear communication.</li>
+      <li>Use of high-quality plants and materials.</li>
+      <li>Expert craftsmanship and professionalism.</li>
+      <li>Post-installation support to ensure your garden remains beautiful and healthy.</li>
+    </ul>
+    <p>Your dream garden is our commitment. We promise to create an outdoor space that you love and cherish for a lifetime.</p>
+  </section>
+
+  <section aria-labelledby="disclaimer-heading" class="disclaimer">
+    <h3 id="disclaimer-heading">Disclaimer</h3>
+    <p>The information provided on this website about Green Garden Design services, pricing, and maintenance is for general informational purposes only. Actual services and pricing may vary based on site inspections and specific customer requirements.</p>
+    <p>While we endeavor to keep garden designs sustainable and eco-friendly, some projects may involve materials or plants that require special care. Customers should consult our team for tailored advice and care instructions.</p>
+    <p>Green Garden Design is not responsible for any damage or issues arising from improper maintenance or unauthorized modifications of the designed garden after project completion.</p>
+  </section>
+</main>
+
+<footer>
+  <p><strong>Green Garden Design</strong></p>
+  <p>123 Greenway Lane, Garden City, GC 45678</p>
+  <p>Phone: (555) 123-4567</p>
+  <p>&copy; 2024 Green Garden Design. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
